@@ -1,0 +1,49 @@
+:root{
+    --darkgrey:hsl(210, 10%, 33%);
+    --strongcyan:hsl(171, 66%, 44%);
+    --lightblue:hsl(233, 100%, 69%);
+    --grayblue:hsl(201, 11%, 66%);
+}
+
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+
+}
+
+h2{
+    font-weight: 600;
+}
+
+.container{
+    text-align: center;
+}
+
+.device-logo{
+    width: 15rem;
+}
+
+/* Footer */
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0% 7%;
+    padding: 10% 0;
+}
+
+.footer a{
+    color:var(--darkgray);
+    text-decoration: none;
+}
+
+.footer img{
+    width: 2.5rem;
+}
+
+.footer .social-icons img{
+    width: 1rem;
+    margin: 1rem;
+}
