@@ -1,7 +1,7 @@
 :root{
     --darkgrey:hsl(210, 10%, 33%);
-    --strongcyan:hsl(171, 66%, 44%);
-    --lightblue:hsl(233, 100%, 69%);
+    --strongcyan:#26baa4;
+    --lightblue:#6173ff;
     --grayblue:hsl(201, 11%, 66%);
 }
 
@@ -11,36 +11,134 @@ body{
 
 }
 
-h2{
+h2, h1{
     font-weight: 600;
+    padding-bottom: 1rem;
+    padding: 1rem 2rem .5rem;
 }
 
-.container{
-    text-align: center;
+p{
+    font-size: 14px;
+    padding: 0 2.5rem;
+    color: var(--grayblue);
 }
+/* Whole project */
+.container{
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    background-image: url('../images/bg-header-mobile.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+
+}
+/* Header Section */
+.header{
+    padding-top: 6rem;
+}
+
+.header .logo{
+    width: 6rem;
+    padding-bottom: 10%;
+}
+
 
 .device-logo{
-    width: 15rem;
+    width: 19rem;
+    margin: 2rem 0;
 }
+
+
+/* Access Content */
+.access-content{
+    margin-top: 10rem;
+}
+
+.access-content .device-logo{
+    margin-bottom: 5rem;
+}
+
+.icons{
+    margin-top: 5rem;
+}
+
+.icons .icon{
+    margin-bottom: 1rem;
+}
+
+/* Companies Section */
+.companies{
+    margin: 5rem 0;
+}
+
+.companies img{
+    margin-top: 5rem;
+    width: 7rem;
+}
+
+.companies img:last-child{
+    margin-bottom: 1rem;
+
+}
+
+/* Buttons */
+.download-button{
+    display: grid;
+    gap: 1.5rem;
+    margin: 3rem 1rem 7rem;
+}
+
+.btn-ios {
+    border-radius: 25px;
+    box-shadow: 0px 2px 3px #26baa4;
+    color: #ffffff;
+    background: #26baa4;
+    padding: 10px 40px;
+    text-decoration: none;
+    border: solid 0px;
+
+  }
+
+  .btn-mac {
+    -webkit-border-radius: 25;
+    -moz-border-radius: 25;
+    border-radius: 25px;
+    -webkit-box-shadow: 0px 2px 3px #6173ff;
+    -moz-box-shadow: 0px 2px 3px #6173ff;
+    box-shadow: 0px 2px 3px #6173ff;
+    color: #ffffff;
+    font-size: 18px;
+    background: #6173ff;
+    padding: 10px 40px;
+    text-decoration: none;
+    border: solid 0px;
+  }
+
+
+
 
 /* Footer */
 
 .footer{
+    background-color: rgba(159, 171, 178, .1);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 0% 7%;
-    padding: 10% 0;
+    margin: 3rem 0;
+    padding: 10% 0 0;
 }
 
 .footer a{
     color:var(--darkgray);
     text-decoration: none;
+    padding: 1rem;
 }
 
 .footer img{
     width: 2.5rem;
+    padding-bottom: 1rem;
 }
 
 .footer .social-icons img{
