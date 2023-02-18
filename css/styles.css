@@ -5,9 +5,15 @@
     --grayblue:hsl(201, 11%, 66%);
 }
 
+html{
+    height: 100%;
+}
+
+
 body{
     font-family: 'Bai Jamjuree', sans-serif;
     font-size: 18px;
+    min-height: 100%;
 
 }
 
@@ -24,6 +30,7 @@ p{
 }
 /* Whole project */
 .container{
+    width: 100%;
     padding-left: 0;
     padding-right: 0;
     text-align: center;
@@ -59,6 +66,7 @@ p{
     margin-bottom: 5rem;
 }
 
+
 .icons{
     margin-top: 5rem;
 }
@@ -70,6 +78,10 @@ p{
 /* Companies Section */
 .companies{
     margin: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .companies img{
@@ -138,10 +150,138 @@ p{
 
 .footer img{
     width: 2.5rem;
-    padding-bottom: 1rem;
 }
 
 .footer .social-icons img{
     width: 1rem;
     margin: 1rem;
+}
+
+.social-icons img{
+    cursor: pointer;
+}
+
+
+@media (min-width:1024px){
+
+    .container{
+        background-image: url('../images/bg-header-desktop.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        max-width: 100%;
+    }
+
+    .header{
+        margin: 0 20rem;
+    }
+
+    .header .logo{
+        padding-bottom: 1rem;
+    }
+
+    .header p{
+        padding: 0 7rem;
+        font-size: 18px;
+    }
+
+    .download-button{
+        display: flex;
+        justify-content: center;
+    }
+    .mid-content p{
+        padding: 0 30rem 4rem;
+    }
+
+    .mid-content .device-logo{
+        width: 50rem;
+        float: left;
+        position: relative;
+        right: 2rem;
+    }
+
+    
+    .storage{
+        text-align: left;
+        margin-top: 5rem;
+    }
+    .storage h2{
+        margin-left: 57%;
+    }
+
+    .storage p{
+        margin-left: 25rem;
+        padding-right: 18rem;
+        padding-bottom: 3rem;
+    }
+
+    /* Access Content */
+    .access-content .device-logo{
+        width: 45rem;
+        margin-bottom: 0;
+
+    }
+
+    .access-content .all{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0 4rem;
+    }
+
+    .access-content .first{
+        padding: 0 30rem;
+   
+    }
+/* Compaines */
+    .companies{
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+    .clipboard p{
+        padding: 0 23rem;
+    }
+
+    .btn-ios:hover, .btn-mac:hover{
+        cursor: pointer;
+        opacity: .7;
+    }
+/* Footer */
+    .footer{
+        padding: 1rem 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+        text-align:left ;
+    }
+
+    .footer img{
+        grid-area: 1 / 1 / 3 /2;
+        margin: 0 auto;
+    }
+
+    .footer a:nth-child(3){
+        grid-area: 2 / 2 / 2 / 3;
+    }
+
+    .footer a:nth-child(5){
+        grid-area: 2 / 3 / 2 / 3;
+    }
+
+    .social-icons{
+        grid-area: 1 / 5 / 3 / 5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .social-icons img{
+        padding-top: 2%;
+    }
+
+    .social-icons i:hover{
+        cursor: pointer;
+        color: #26baa4;
+    }
 }

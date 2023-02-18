@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/769f98fd4d.js" crossorigin="anonymous"></script>
   
   <title>Frontend Mentor | Clipboard landing page</title>
 </head>
@@ -36,43 +37,49 @@
         meaning you can access your snippets immediately on all your 
         devices. Our Mac and iOS apps will help you organize everything.
       </p>
-      <img src="/images/image-computer.png" alt="computer-icon" class="device-logo">
-      <h2>Quick Search</h2>
-      <p>Easily search your snippets by content, category, web address, application, and more.</p>
+              <img src="/images/image-computer.png" alt="computer-icon" class="device-logo">
 
-      <h2>iCloud Sync</h2>
-      <p>Instantly saves and syncs snippets across all your devices.</p>
-      <h2>Complete History</h2>
-      <p>Retrieve any snippets from the first moment you started using the app.</p>
+      <div class="storage">
+        <h2>Quick Search</h2>
+        <p>Easily search your snippets by content, category, web address, application, and more.</p>
+  
+        <h2>iCloud Sync</h2>
+        <p>Instantly saves and syncs snippets across all your devices.</p>
+        <h2>Complete History</h2>
+        <p>Retrieve any snippets from the first moment you started using the app.</p>
+      </div>
     </div>
 
     <!--Access Content-->
     <div class="access-content">
       <h2>Access Clipboard anywhere</h2>
-      <p>Whether you’re on the go, or at your computer, you can access all your Clipboard 
+      <p class="first">Whether you’re on the go, or at your computer, you can access all your Clipboard 
         snippets in a few simple clicks.
       </p>
       <img src="images/image-devices.png" alt="devices-icon" class="device-logo">
 
       <h2>Supercharge your workflow</h2>
       <p>We’ve got the tools to boost your productivity.</p>
-      <div class="icons">
-        <img src="images/icon-blacklist.svg" alt="blacklist-icon" class="icon">
-        <h2>Create blacklists</h2>
-        <p>Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
-      </div>
-      <div class="icons">
-        <img src="images/icon-text.svg" alt="icon-text" class="icon">
-        <h2>Plain text snippets</h2>
-        <p>Remove unwanted formatting from copied text for a consistent look.</p>
-      </div>
-      <div class="icons">
-        <img src="images/icon-preview.svg" alt="icon-preview" class="icon">
-        <h2>Sneak preview</h2>
-        <p>Quick preview of all snippets on your Clipboard for easy access.</p>
+
+      <div class="all">
+        <div class="icons">
+          <img src="images/icon-blacklist.svg" alt="blacklist-icon" class="icon">
+          <h2>Create blacklists</h2>
+          <p  class="last">Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
+        </div>
+        <div class="icons">
+          <img src="images/icon-text.svg" alt="icon-text" class="icon">
+          <h2>Plain text snippets</h2>
+          <p>Remove unwanted formatting from copied text for a consistent look.</p>
+        </div>
+        <div class="icons">
+          <img src="images/icon-preview.svg" alt="icon-preview" class="icon">
+          <h2>Sneak preview</h2>
+          <p>Quick preview of all snippets on your Clipboard for easy access.</p>
+        </div>
       </div>
       <!--Companies Section-->
-      <div class="companies col-6 mx-auto">
+      <div class="companies">
         <img src="images/logo-google.png" alt="google-logo">
         <img src="images/logo-ibm.png" alt="ibm-logo">
         <img src="images/logo-microsoft.png" alt="microsoft-logo">
@@ -100,17 +107,10 @@
       <a href="#">Install Guide</a>
       <div class="social-icons">
         <img src="images/icon-facebook.svg" alt="facebook">
-        <img src="images/icon-twitter.svg" alt="twitter">
+        <i class="fa-brands fa-twitter"></i>
         <img src="images/icon-instagram.svg" alt="instagram">
       </div>
     </div>
-  </div>
-
-  
-  
-  
-  
-  
-
+  </div>  
 </body>
 </html>
