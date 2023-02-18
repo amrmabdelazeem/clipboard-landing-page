@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend-Mentor](https://your-solution-url.com)
-- Live Site URL: [Live-site](https://your-live-site-url.com)
+- Solution URL: [Frontend-Mentor](https://www.frontendmentor.io/solutions/clipboardlandingpagemaster-with-flex-grid-and-bootstrap-6E2m-SosTg)
+- Live Site URL: [Live-site](https://amrmabdelazeem.github.io/clipboard-landing-page/)
 
 ### Built with
 
